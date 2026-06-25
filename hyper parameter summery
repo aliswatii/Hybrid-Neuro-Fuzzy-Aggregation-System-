@@ -1,0 +1,25 @@
+Table 2: hyper parameter summery
+Component	Parameter	Search Range / Setting	Selected Value
+WBM	p (exponent)	[0.5, 3.0]	Tuned via Optuna
+WBM	q (exponent)	[0.5, 3.0]	Tuned via Optuna
+Sigmoid	k (steepness)	Fixed	8
+Sigmoid	x₀ (inflection)	Fixed	0.3
+PCA	K (components)	Fixed	18 (96.9% variance)
+K-Means	k (clusters)	Fixed	4 (risk categories)
+K-Means	n_init	Fixed	20
+Neural Net	Architecture	Fixed	128-BN-D(0.4)-64-BN-D(0.3)-32-D(0.2)-4
+Neural Net	Learning rate η₀	[10⁻⁴, 10⁻²]	Tuned via Optuna
+Neural Net	L2 penalty λ	[10⁻⁵, 10⁻³]	Tuned via Optuna
+Neural Net	Batch size	Fixed	32
+Neural Net	Max epochs	Fixed	150
+Neural Net	Early stop patience	Fixed	15
+Neural Net	LR reduction patience	Fixed	7
+Neural Net	Optimiser	Fixed	Adam (β₁=0.9, β₂=0.999)
+Random Forest	n estimators	{100, 200}	Grid search (5-fold CV)
+Random Forest	max_depth	{10, 20, None}	Grid search (5-fold CV)
+XGBoost	n_estimators	{100, 200}	Grid search (5-fold CV)
+XGBoost	learning_rate	{0.05, 0.1}	Grid search (5-fold CV)
+XGBoost	max_depth	{4, 6, 8}	Grid search (5-fold CV)
+SVM	C	{0.1, 1, 10}	Grid search (5-fold CV)
+SVM	gamma	{scale, auto}	Grid search (5-fold CV)
+Logistic Reg.	C	Fixed	1.0 (elastic default)
