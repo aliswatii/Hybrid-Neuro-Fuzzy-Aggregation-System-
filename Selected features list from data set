@@ -1,0 +1,45 @@
+Table 3: Selected features list from data set
+Feature name	Clinical category	Data type	Measurement/range	Clinical relevancy
+Age	Demographic	Integer-years	18-90	Risk increases with age
+Alcohol consumption per week
+	Life style	Integer-drink per week	0-6	U-shaped risk relation
+Physical activity minutes per week
+	Life style	Integer-minutes per week	0-300	Protective factor
+Diet score
+	Life style	float 	0-10	Nutrition quality assessment
+Sleep hours per day
+	Life style	Float	4.1-10	Short and long sleeps associated with metabolic dysregulation
+Screen time hours per day
+	Life style/behavioral	Float	0.5-12.9	Linked to obesity, metabolic syndrome, and increase diabetic risk
+Family history diabetes
+	genetic	Binary	0/1	It is a major non-modifiable factor indicating predisposition
+Hypertension history
+	comorbidity	Binary	0/1	Significantly elevate diabetes. Hypertension often co-occurs with insulin resistance  
+Cardiovascular history
+	comorbidity	binary	0/1	CVD share common risk factors with diabetes
+Bmi
+	Body composition	Float	16.5-38.2	BMI>30 is a strong diabetic risk factor
+Waist to hip ratio
+	Body composition	Float	0.72-1.0	Strongly link to insulin resistance and chronic inflammation
+Systolic BP
+	Vital clinical	Integer mmHg	90-165	Elevation of systolic BP indicates cardiovascular and metabolic stress, correlation with diabetic risk
+Diastolic BP
+	Vital clinical	Integer mmHg	51-101	Elevation of diastolic BP indicates cardiovascular and metabolic stress, often accompanying  insulin resistance
+Heart rate
+	Vital clinical	Integer/beats per min	44-100	Elevated resting heart rate can be linked to higher diabetic risk
+Cholesterol total
+	Lipid profile	Integer-mg/dl	100-300	Dyslipidemia is a matobolic component, associated with insulin resistant
+Hdl cholesterol
+	Lipid profile	Integer-mg/dl	25-83	Low Hdl is a key feature of metabolic syndrome
+Ldl cholesterol
+	Lipid profile	Integer-mg/dl	50-245	High Ldl contribute to cardiovascular health, which often coexist with diabetes
+triglycerides
+	Lipid profile	Integer-mg/dl	30-274	Strongly associated with diabetes risk
+Glucose fasting
+	Glycemic control	Integer-mg/dl	75-163	Strongly associated with diabetes, a key diagnostic criteria 
+Glucose postprandial
+	Glycemic control	Integer-mg/dl	77-266	---
+Insulin level
+	Glycemic control/Hormonal	Float-uIU/mL	2.0-63.62	A core pathophysiological driver of T2D 
+hba1c
+	Glycemic control	Float-%	4.27-9.37	Very strong factor, gold standard for long term control of diabetes
