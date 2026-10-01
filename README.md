@@ -1,0 +1,1 @@
+We proposed a Hybrid Neuro-Fuzzy Aggregation System (HNFAS) for multi-level diabetes risk stratification. PCA extracts latent features, adaptive Gaussian fuzzification models uncertainty, and variance-aware WBM aggregation captures feature interactions. Theresulting risk representation is fused with PCA features for NN based risk prediction.
